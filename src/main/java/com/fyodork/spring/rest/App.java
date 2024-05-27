@@ -5,6 +5,7 @@ import com.fyodork.spring.rest.entity.Employee;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Hello world!
@@ -37,7 +38,10 @@ public class App
         communication.saveEmployee(emp);
 
         //delete
-        //communication.deleteEmployee(10);
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter id employee to delete from database");
+        int id=scanner.nextInt();
+        communication.deleteEmployee(id);
 
     }
 }

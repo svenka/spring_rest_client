@@ -40,8 +40,8 @@ public class App
         //delete
         Scanner scanner=new Scanner(System.in);
         System.out.println("Enter id employee to delete from database");
-        int id=scanner.nextInt();
-        communication.deleteEmployee(id);
+        int id_emp=scanner.nextInt();
+        communication.deleteEmployee(id_emp);
 
     }
 }
